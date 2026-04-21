@@ -8,6 +8,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addDataExtension('yaml,yml', (contents) => yaml.load(contents));
 
   return {
+    pathPrefix: '/cv/',
     dir: {
       input: 'src',
       output: 'docs',
