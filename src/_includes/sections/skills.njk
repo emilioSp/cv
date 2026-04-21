@@ -1,0 +1,23 @@
+<section id="skills" class="section">
+  <div class="cv-container">
+
+    <div class="flex items-center gap-3 mb-[52px]">
+      <span class="accent-rule"></span>
+      <span class="font-mono text-[10px] tracking-[0.14em] uppercase text-accent">LOADED MODULES / TECHNICAL SKILLS</span>
+    </div>
+
+    <div class="grid grid-cols-[repeat(auto-fit,minmax(290px,1fr))] gap-5">
+      {% for cat in skills %}
+      <div class="hud p-7">
+        <div class="hud-card-header">{{ cat.cat }}</div>
+        <div class="flex flex-wrap gap-2">
+          {% for item in cat.items %}
+          <span class="skill-tag">{{ item }}</span>
+          {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</section>
