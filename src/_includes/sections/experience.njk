@@ -12,12 +12,13 @@
       <div class="hud exp-card mb-[3px] overflow-hidden">
 
         <!-- Header (clickable) -->
-        <div class="exp-header grid grid-cols-[auto_1fr_auto_auto] items-center gap-5 px-7 py-5 cursor-pointer transition-[background] duration-200{% if isFirst %} bg-[rgba(255,255,255,0.018)]{% endif %}">
+        <div class="exp-header grid grid-cols-[1fr_auto] md:grid-cols-[auto_1fr_auto_auto] items-center gap-5 px-7 py-5 cursor-pointer transition-[background] duration-200{% if isFirst %} bg-[rgba(255,255,255,0.018)]{% endif %}">
           <div>
             <div class="text-[20px] font-bold tracking-[0.04em]">{{ exp.team }}</div>
             <div class="text-[15px] text-[#888] tracking-[0.04em] mt-[3px]">{{ exp.role }}</div>
+            <div class="font-mono text-[13px] text-[#888] tracking-[0.07em] mt-1 md:hidden">{{ exp.period }}</div>
           </div>
-          <div class="font-mono text-[14px] text-[#888] tracking-[0.07em] justify-self-end">{{ exp.period }}</div>
+          <div class="font-mono text-[14px] text-[#888] tracking-[0.07em] justify-self-end hidden md:block">{{ exp.period }}</div>
           <div class="exp-chevron text-accent{% if isFirst %} open{% endif %}">&#9662;</div>
         </div>
 

@@ -176,6 +176,33 @@ body::after {
 ::-webkit-scrollbar-thumb { background: #333; }
 ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
 
+/* ── MOBILE NAV ──────────────────────────────────────────────── */
+.mobile-nav {
+  display: none;
+  background: rgba(8,8,8,0.97);
+}
+.mobile-nav.open { display: block; }
+
+.mobile-nav-link {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px; letter-spacing: 0.13em;
+  color: #888; text-decoration: none;
+  padding: 12px 0;
+  border-bottom: 1px solid #1a1a1a;
+  display: block;
+  transition: color 0.2s;
+}
+.mobile-nav-link:last-child { border-bottom: none; }
+.mobile-nav-link:hover { color: var(--accent); }
+
+/* ── RESPONSIVE ──────────────────────────────────────────────── */
+@media (max-width: 767px) {
+  .cv-container { padding: 0 16px; }
+  .section      { padding: 56px 0; }
+  .stat-strip   { grid-template-columns: repeat(2, 1fr); }
+  .stat-cell    { border-right: 1px solid #2a2a2a; }
+}
+
 /* ── ACCESSIBILITY ───────────────────────────────────────────── */
 @media (prefers-reduced-motion: reduce) {
   .fadeUp { animation: none; }
