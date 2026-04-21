@@ -1,0 +1,23 @@
+degrees:
+  - level: Master's Degree
+    field: Computer Science
+    school: University of Salerno
+    years: 2008–2012
+    note: "Thesis: real-time Ambient Occlusion algorithm for videogame depth perception."
+  - level: Bachelor's Degree
+    field: Computer Science
+    school: University of Salerno
+    years: 2004–2008
+    note: "Scholarship: innovative e-commerce solutions in web 3D virtual environments."
+
+patents:
+  - Identifying a seat position with infrared light
+  - Method and system for paperless electronic queue ticketing
+
+certs:
+  - label: Elasticsearch Essential Training
+  - label: Behavior-Driven Development
+  - label: "Exam 480: HTML5, JavaScript & CSS3"
+  - label: Advanced SQL for Query Tuning & Performance
+  - label: "EF SET English Certificate — C2 Proficient"
+    href: https://cert.efset.org/PVgG7U

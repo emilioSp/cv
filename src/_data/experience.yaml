@@ -1,0 +1,91 @@
+- team: THEFORK · TRIPADVISOR
+  role: Senior Software Engineer · Tech Lead
+  period: "2022 — 2025"
+  season: "2022"
+  intro: >
+    Senior Software Engineer in the Core Marketplace team, working on core, transversal
+    systems powering TheFork's B2C and B2B platforms, with a strong focus on gift cards
+    and enterprise partners integration.
+  bullets:
+    - Designed and delivered complex backend solutions end-to-end (discovery, technical analysis, delivery and production validation).
+    - Technical owner for cross-team initiatives and partner integrations.
+    - Led and contributed to large technical initiatives and migrations to newer systems.
+    - Documented technical details, processes, and project information.
+    - Collaborated closely with Product and QA on discovery and delivery phases.
+    - Mentored and guided junior and intermediate developers through a hands-on, examples-based approach, fostering a collaborative learning environment.
+    - Conducted regular code reviews, contributing to the professional growth of team members.
+  stack:
+    - Node.js
+    - TypeScript
+    - AWS
+    - Microservices
+    - RabbitMQ
+    - Gift Cards
+
+- team: TRANSLATED
+  role: Senior Software Engineer
+  period: "2016 — 2022"
+  season: "2016"
+  intro: >
+    Design and implementation of the TranslationOS APIs — the backbone of the Translated
+    environment, used by customers to implement the continuous translation flow.
+  bullets:
+    - The APIs are the foundation of all internal software used every day by the operations team.
+    - Designed to achieve a high level of automation — essential to guarantee the high productivity reached by the operations team.
+    - Full stack ownership across frontend and backend; worked closely with management and end-users to gather requirements.
+    - "Hosted infrastructure: on-premise Docker Swarm + AWS."
+  links:
+    - label: api.translated.com/v2
+      href: https://api.translated.com/v2
+    - label: translated.com/translation-os
+      href: https://translated.com/translation-os
+  stack:
+    - Node.js
+    - React
+    - Docker
+    - Docker Swarm
+    - MySQL
+    - AWS
+
+- team: ITALIAN MINISTRY OF TECHNOLOGICAL INNOVATION
+  role: Senior Software Engineer · Italian Government
+  period: "2020 — 2021"
+  season: "2020"
+  intro: >
+    Software Engineer for the Italian government at the Minister of Technology Innovation
+    and Digital Transformation. Mainly as Frontend Engineer, contributing to many open
+    source projects in the Italia GitHub organization.
+  bullets:
+    - Refactored the "Software catalogue" section of developers.italia.it — removed jQuery entirely in favor of React.
+    - Developed cloud.italia.it using Gatsby.js (JAMstack).
+    - Built an Open API 3.0 checker with a live editor, helping users validate OpenAPI schemas against defined rulesets.
+  links:
+    - label: github.com/italia/developers.italia.it
+      href: https://github.com/italia/developers.italia.it
+    - label: github.com/italia/cloud.italia.it-site
+      href: https://github.com/italia/cloud.italia.it-site
+    - label: github.com/italia/api-oas-checker
+      href: https://github.com/italia/api-oas-checker
+  stack:
+    - React
+    - Gatsby.js
+    - JAMstack
+    - TypeScript
+    - Open Source
+
+- team: IBM
+  role: Software Engineer
+  period: "2012 — 2016"
+  season: "2012"
+  intro: "Covered many roles: frontend developer, REST API developer, test engineer and inventor."
+  bullets:
+    - Frontend developer on the product IBM Workload Automation.
+    - Design and development of REST APIs (both server and client).
+    - Patents applications in the technology area aligned with IBM strategy.
+    - Design and implementation of automated test suites.
+  stack:
+    - Java
+    - JavaScript
+    - REST APIs
+    - Agile
+    - OSLC

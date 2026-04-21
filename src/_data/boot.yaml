@@ -1,0 +1,20 @@
+- text: "DRIVER PROFILE SYSTEM  ·  v2.6.1"
+  type: head
+- text: "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+  type: rule
+- text: Loading hardware interfaces
+  type: check
+- text: Mounting career telemetry database
+  type: check
+- text: Calibrating performance metrics
+  type: check
+- text: Syncing sector times
+  type: check
+- text: Validating driver credentials
+  type: check
+- text: Compiling experience records
+  type: check
+- text: "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+  type: rule
+- text: "ALL SYSTEMS NOMINAL  ·  DRIVER CLEARED"
+  type: ready

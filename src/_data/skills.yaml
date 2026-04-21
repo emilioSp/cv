@@ -1,0 +1,33 @@
+- cat: LANGUAGES & RUNTIME
+  items:
+    - TypeScript
+    - Node.js
+    - Java
+
+- cat: DATA
+  items:
+    - PostgreSQL
+    - MySQL
+    - Modern SQL
+    - CTE / Window Functions
+
+- cat: ARCHITECTURE
+  items:
+    - API Development
+    - Microservices
+    - RabbitMQ
+    - Software Design
+
+- cat: INFRASTRUCTURE
+  items:
+    - Docker
+    - Docker Swarm
+    - Git
+    - CI/CD · GitHub Actions
+
+- cat: APPROACH
+  items:
+    - Problem Solving
+    - Effective Communication
+    - Pragmatic Engineering
+    - Mentoring
