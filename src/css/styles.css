@@ -45,8 +45,6 @@ body::after {
 #app { position: relative; z-index: 2; }
 
 /* ── ACCENT HELPERS ──────────────────────────────────────────── */
-.accent        { color: var(--accent); }
-.accent-bg     { background: var(--accent); }
 .accent-border { border-color: var(--accent) !important; }
 .accent-rule   {
   display: block; width: 36px; height: 2px;
@@ -124,8 +122,8 @@ body::after {
 .nav-link:hover { color: var(--accent); }
 
 /* ── SECTION LAYOUT ──────────────────────────────────────────── */
-.section    { padding: 88px 0; border-top: 1px solid #2a2a2a; }
-.container  { max-width: 1120px; margin: 0 auto; padding: 0 36px; }
+.section      { padding: 88px 0; border-top: 1px solid #2a2a2a; }
+.cv-container { max-width: 1120px; margin: 0 auto; padding: 0 36px; }
 
 /* ── STAT STRIP ──────────────────────────────────────────────── */
 .stat-strip {
@@ -184,8 +182,17 @@ body::after {
 
 .fadeUp { animation: fadeUp 0.7s ease 0.1s both; }
 
+.sweep-line { animation: sweep 2.4s linear infinite; }
+
 /* ── SCROLLBAR ───────────────────────────────────────────────── */
 ::-webkit-scrollbar       { width: 3px; }
 ::-webkit-scrollbar-track { background: #080808; }
 ::-webkit-scrollbar-thumb { background: #333; }
 ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+
+/* ── ACCESSIBILITY ───────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  .boot-line, .fadeUp, .blink-cursor, .sweep-line { animation: none; }
+  .exp-body { transition: none; }
+  .exp-chevron { transition: none; }
+}
