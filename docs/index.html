@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EMILIO SPATOLA — SOFTWARE ENGINEER</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+  <div id="app">
+    <header id="site-header" class="fixed top-0 left-0 right-0 z-[200] h-12 bg-[rgba(8,8,8,0.9)] backdrop-blur-md border-b border-[#2a2a2a]">
+  <div class="cv-container h-full grid grid-cols-[auto_1fr_auto] items-center">
+
+    <div class="flex items-center gap-[18px]">
+      <span class="font-mono text-[15px] tracking-[0.14em] uppercase text-accent">EMILIO SPATOLA</span>
+    </div>
+
+    <nav class="flex justify-center gap-7">
+      <a href="#profile"    class="nav-link">PROFILE</a>
+      <a href="#brief"      class="nav-link">BRIEF</a>
+      <a href="#experience" class="nav-link">EXPERIENCE</a>
+      <a href="#skills"     class="nav-link">SKILLS</a>
+      <a href="#education"  class="nav-link">EDUCATION</a>
+      <a href="#contact"    class="nav-link">CONTACT</a>
+    </nav>
+
+  </div>
+</header>
+
+<main>
+  <section id="profile" class="min-h-screen grid items-center pt-12 relative overflow-hidden">
+  <div class="rail"></div>
+
+  <div class="cv-container relative w-full fadeUp">
+    <div class="max-w-[700px]">
+
+      <!-- Eyebrow -->
+      <div class="flex items-center gap-3 mb-7">
+        <span class="accent-rule"></span>
+        <span class="font-mono text-[14px] tracking-[0.14em] uppercase text-accent">PROFILE</span>
+      </div>
+
+      <!-- Name -->
+      <div class="mb-2">
+        <div class="font-[Rajdhani] font-light tracking-[0.45em] text-[#888] uppercase mb-1" style="font-size:clamp(20px,2.5vw,28px);">EMILIO</div>
+        <h1 class="font-[Rajdhani] font-bold leading-[0.88] tracking-[-0.025em] text-[#e4e4e4]" style="font-size:clamp(56px,9vw,108px);">SPATOLA</h1>
+      </div>
+
+      <div class="font-[Rajdhani] font-semibold tracking-[0.3em] text-accent uppercase mb-9" style="font-size:clamp(14px,2vw,19px);">
+        SENIOR SOFTWARE ENGINEER · TECH LEAD · SIMRACER
+      </div>
+
+      <p class="text-[17px] leading-[1.7] text-[#888] max-w-[480px] mb-4">10+ years building web products — from IBM to the Italian Government, from Translated to TheFork (TripAdvisor). Specialized in Node.js, TypeScript, API, Software Architecture and Postgres.
+</p>
+      <p class="font-mono text-[15px] leading-[1.6] text-[#888] max-w-[460px] mb-12 tracking-[0.02em]">&quot;The hardest thing is to find the simplest one.&quot;</p>
+
+      <!-- Stats strip -->
+      <div class="stat-strip mb-11">
+        
+        <div class="stat-cell">
+          <div class="font-mono text-[10px] tracking-[0.12em] text-[#888] mb-[6px] uppercase">YEARS EXP.</div>
+          <div class="font-[Rajdhani] font-bold text-[20px] tracking-[0.05em]">10+</div>
+        </div>
+        
+        <div class="stat-cell">
+          <div class="font-mono text-[10px] tracking-[0.12em] text-[#888] mb-[6px] uppercase">STACK</div>
+          <div class="font-[Rajdhani] font-bold text-[20px] tracking-[0.05em]">Node.js / TypeScript</div>
+        </div>
+        
+        <div class="stat-cell">
+          <div class="font-mono text-[10px] tracking-[0.12em] text-[#888] mb-[6px] uppercase">BASE</div>
+          <div class="font-[Rajdhani] font-bold text-[20px] tracking-[0.05em]">ITALY</div>
+        </div>
+        
+        <div class="stat-cell">
+          <div class="font-mono text-[10px] tracking-[0.12em] text-[#888] mb-[6px] uppercase">STATUS</div>
+          <div class="font-[Rajdhani] font-bold text-[20px] tracking-[0.05em] text-accent">OPEN</div>
+        </div>
+        
+      </div>
+
+      <!-- CTAs -->
+      <div class="flex gap-[14px] flex-wrap">
+        <a href="#experience" class="btn-primary">VIEW WORK EXPERIENCE &darr;</a>
+        <a href="https://linkedin.com/in/emilio-spatola" target="_blank" class="btn-ghost">LINKEDIN</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <section id="brief" class="section">
+  <div class="cv-container">
+
+    <div class="flex items-center gap-3 mb-[52px]">
+      <span class="accent-rule"></span>
+      <span class="font-mono text-[14px] tracking-[0.14em] uppercase text-accent">BRIEF / ABOUT</span>
+    </div>
+
+    <div class="grid grid-cols-2 gap-5">
+
+      <!-- Pull quote (full width) -->
+      <div class="hud col-span-2 relative overflow-hidden p-9 px-8">
+        <div class="absolute top-[-10px] left-6 text-[120px] leading-none text-[rgba(255,255,255,0.03)] font-[Rajdhani] font-bold pointer-events-none">&ldquo;</div>
+        <p class="font-[Rajdhani] font-medium leading-[1.55] text-[#ccc] max-w-[820px] relative" style="font-size:clamp(18px,2.2vw,26px);">
+          Code is the means, product is the goal. Never allow your technical debt to overtake your decisions. Perfect but useless software is a waste of time worse than the technical debt.
+        </p>
+        <p class="font-[Rajdhani] leading-[1.6] text-[#888] max-w-[820px] mt-4 relative" style="font-size:clamp(16px,1.8vw,20px);">
+          I define myself as a pragmatic and minimalist engineer. Complexity is easy to achieve whereas simplicity is hard.
+          In the long run, simplicity always wins. Complexity slows your product down until it stagnates, and AI won't save you from that.
+        </p>
+      </div>
+
+      <!-- My Story -->
+      <div class="hud p-7">
+        <div class="hud-card-header">MY STORY</div>
+        <p class="text-[16px] leading-[1.75] text-[#888]">
+          Started at <span class="text-[#bbb]">IBM</span>, learning to design and develop large-scale software using Agile practices.
+        </p>
+        <p class="text-[16px] leading-[1.75] text-[#888] mt-[14px]">
+          In 2016 joined <span class="text-[#bbb]">Translated</span> as a Full Stack Engineer, spending six years growing across frontend and backend, including a collaboration with the <span class="text-[#bbb]">Italian Government</span> at the Ministry of Technological Innovation.
+        </p>
+        <p class="text-[16px] leading-[1.75] text-[#888] mt-[14px]">
+          Most recently at <span class="text-[#bbb]">TheFork (TripAdvisor)</span> as Senior Software Engineer and Tech Lead, designing complex backend systems,
+          mentoring developers, and owning cross-team technical initiatives.
+        </p>
+        <p class="font-mono text-[16px] leading-[1.6] text-accent mt-5 tracking-[0.03em]">
+          &rarr; Currently looking for a new opportunity.
+        </p>
+      </div>
+
+      <!-- In a Nutshell -->
+      <div class="hud p-7">
+        <div class="hud-card-header">IN A NUTSHELL</div>
+        <p class="text-[16px] leading-[1.75] text-[#888] mb-6">
+          I'm a simple person. I don't like many things, but what I do like, I love passionately, and I enjoy building things that actually work.
+        </p>
+        <div class="grid gap-[10px]">
+          
+          
+          <div class="flex gap-3 items-start">
+            <span class="text-accent text-[7px] mt-[6px] shrink-0">&#9670;</span>
+            <span class="text-[16px] text-[#888]">Pragmatic &amp; minimalist by design</span>
+          </div>
+          
+          <div class="flex gap-3 items-start">
+            <span class="text-accent text-[7px] mt-[6px] shrink-0">&#9670;</span>
+            <span class="text-[16px] text-[#888]">Complexity as a smell, simplicity as a goal</span>
+          </div>
+          
+          <div class="flex gap-3 items-start">
+            <span class="text-accent text-[7px] mt-[6px] shrink-0">&#9670;</span>
+            <span class="text-[16px] text-[#888]">Product focus over technical ego</span>
+          </div>
+          
+          <div class="flex gap-3 items-start">
+            <span class="text-accent text-[7px] mt-[6px] shrink-0">&#9670;</span>
+            <span class="text-[16px] text-[#888]">Hands-on mentor and collaborator</span>
+          </div>
+          
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <section id="experience" class="section">
+  <div class="cv-container">
+
+    <div class="flex items-center gap-3 mb-[52px]">
+      <span class="accent-rule"></span>
+      <span class="font-mono text-[14px] tracking-[0.14em] uppercase text-accent">WORK EXPERIENCE</span>
+    </div>
+
+    <div id="exp-list">
+      
+      
+      <div class="hud exp-card mb-[3px] overflow-hidden">
+
+        <!-- Header (clickable) -->
+        <div class="exp-header grid grid-cols-[auto_1fr_auto_auto] items-center gap-5 px-7 py-5 cursor-pointer transition-[background] duration-200 bg-[rgba(255,255,255,0.018)]">
+          <div>
+            <div class="text-[20px] font-bold tracking-[0.04em]">THEFORK · TRIPADVISOR</div>
+            <div class="text-[15px] text-[#888] tracking-[0.04em] mt-[3px]">Senior Software Engineer · Tech Lead</div>
+          </div>
+          <div class="font-mono text-[14px] text-[#888] tracking-[0.07em] justify-self-end">2022 — 2025</div>
+          <div class="exp-chevron text-accent open">&#9662;</div>
+        </div>
+
+        <!-- Body (collapsible) -->
+        <div class="exp-body open border-t border-[rgba(255,255,255,0.04)]">
+          <div class="px-7 pt-2 pb-7">
+
+            
+            <p class="text-[16px] text-[#888] leading-[1.6] mb-4 pb-4 border-b border-[rgba(255,255,255,0.04)]">Senior Software Engineer in the Core Marketplace team, working on core, transversal systems powering TheFork&#39;s B2C and B2B platforms, with a strong focus on gift cards and enterprise partners integration.
+</p>
+            
+
+            <ul class="list-none mb-5">
+              
+              <li class="flex gap-3 items-start py-2 text-[16px] text-[#999] leading-[1.55] border-b border-[rgba(255,255,255,0.03)]">
+                <span class="text-accent text-[7px] mt-[7px] shrink-0">&#9670;</span>
+                Designed and delivered complex backend solutions end-to-end (discovery, technical analysis, delivery and production validation).
+              </li>
+              
+              <li class="flex gap-3 items-start py-2 text-[16px] text-[#999] leading-[1.55] border-b border-[rgba(255,255,255,0.03)]">
+                <span class="text-accent text-[7px] mt-[7px] shrink-0">&#9670;</span>
+                Technical owner for cross-team initiatives and partner integrations.
+              </li>
+              
+              <li class="flex gap-3 items-start py-2 text-[16px] text-[#999] leading-[1.55] border-b border-[rgba(255,255,255,0.03)]">
+                <span class="text-accent text-[7px] mt-[7px] shrink-0">&#9670;</span>
+                Led and contributed to large technical initiatives and migrations to newer systems.
+              </li>
+              
+              <li class="flex gap-3 items-start py-2 text-[16px] text-[#999] leading-[1.55] border-b border-[rgba(255,255,255,0.03)]">
+                <span class="text-accent text-[7px] mt-[7px] shrink-0">&#9670;</span>
+                Documented technical details, processes, and project information.
+              </li>
+              
+              <li class="flex gap-3 items-start py-2 text-[16px] text-[#999] leading-[1.55] border-b border-[rgba(255,255,255,0.03)]">
+                <span class="text-accent text-[7px] mt-[7px] shrink-0">&#9670;</span>
+                Collaborated closely with Product and QA on discovery and delivery phases.
+              </li>
+              
+              <li class="flex gap-3 items-start py-2 text-[16px] text-[#999] leading-[1.55] border-b border-[rgba(255,255,255,0.03)]">
+                <span class="text-accent text-[7px] mt-[7px] shrink-0">&#9670;</span>
+                Mentored and guided junior and intermediate developers through a hands-on, examples-based approach, fostering a collaborative learning environment.
+              </li>
+              
+              <li class="flex gap-3 items-start py-2 text-[16px] text-[#999] leading-[1.55]">
+                <span class="text-accent text-[7px] mt-[7px] shrink-0">&#9670;</span>
+                Conducted regular code reviews, contributing to the professional growth of team members.
+              </li>
+              
+            </ul>
+
+            
+
+            <div class="flex gap-[6px] flex-wrap mt-4">
+              
+              <span class="tag">Node.js</span>
+              
+              <span class="tag">TypeScript</span>
+              
+              <span class="tag">AWS</span>
+              
+              <span class="tag">Microservices</span>
+              
+              <span class="tag">RabbitMQ</span>
+              
+              <span class="tag">Gift Cards</span>
+              
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="hud exp-card mb-[3px] overflow-hidden">
+
+        <!-- Header (clickable) -->
+        <div class="exp-header grid grid-cols-[auto_1fr_auto_auto] items-center gap-5 px-7 py-5 cursor-pointer transition-[background] duration-200">
+          <div>
+            <div class="text-[20px] font-bold tracking-[0.04em]">TRANSLATED</div>
+            <div class="text-[15px] text-[#888] tracking-[0.04em] mt-[3px]">Senior Software Engineer</div>
+          </div>
+          <div class="font-mono text-[14px] text-[#888] tracking-[0.07em] justify-self-end">2016 — 2022</div>
+          <div class="exp-chevron text-accent">&#9662;</div>
+        </div>
+
+        <!-- Body (collapsible) -->
+        <div class="exp-body border-t border-[rgba(255,255,255,0.04)]">
+          <div class="px-7 pt-2 pb-7">
+
+            
+            <p class="text-[16px] text-[#888] leading-[1.6] mb-4 pb-4 border-b border-[rgba(255,255,255,0.04)]">Design and implementation of the TranslationOS APIs — the backbone of the Translated environment, used by customers to implement the continuous translation flow.
+</p>
+            
+
+            <ul class="list-none mb-5">
+              
+              <li class="flex gap-3 items-start py-2 text-[16px] text-[#999] leading-[1.55] border-b border-[rgba(255,255,255,0.03)]">
+                <span class="text-accent text-[7px] mt-[7px] shrink-0">&#9670;</span>
+                The APIs are the foundation of all internal software used every day by the operations team.
+              </li>
+              
+              <li class="flex gap-3 items-start py-2 text-[16px] text-[#999] leading-[1.55] border-b border-[rgba(255,255,255,0.03)]">
+                <span class="text-accent text-[7px] mt-[7px] shrink-0">&#9670;</span>
+                Designed to achieve a high level of automation — essential to guarantee the high productivity reached by the operations team.
+              </li>
+              
+              <li class="flex gap-3 items-start py-2 text-[16px] text-[#999] leading-[1.55] border-b border-[rgba(255,255,255,0.03)]">
+                <span class="text-accent text-[7px] mt-[7px] shrink-0">&#9670;</span>
+                Full stack ownership across frontend and backend; worked closely with management and end-users to gather requirements.
+              </li>
+              
+              <li class="flex gap-3 items-start py-2 text-[16px] text-[#999] leading-[1.55]">
+                <span class="text-accent text-[7px] mt-[7px] shrink-0">&#9670;</span>
+                Hosted infrastructure: on-premise Docker Swarm + AWS.
+              </li>
+              
+            </ul>
+
+            
+            <div class="flex flex-wrap gap-2 mt-[14px]">
+              
+              <a href="https://api.translated.com/v2" target="_blank"
+                 class="font-mono text-[14px] text-accent tracking-[0.06em] opacity-70 no-underline border-b border-transparent transition-[opacity,border-color] duration-200"
+                 onmouseenter="this.style.opacity='1';this.style.borderBottomColor='var(--accent)'"
+                 onmouseleave="this.style.opacity='0.7';this.style.borderBottomColor='transparent'">
+                api.translated.com/v2 ↗
+              </a>
+              
+              <a href="https://translated.com/translation-os" target="_blank"
+                 class="font-mono text-[14px] text-accent tracking-[0.06em] opacity-70 no-underline border-b border-transparent transition-[opacity,border-color] duration-200"
+                 onmouseenter="this.style.opacity='1';this.style.borderBottomColor='var(--accent)'"
+                 onmouseleave="this.style.opacity='0.7';this.style.borderBottomColor='transparent'">
+                translated.com/translation-os ↗
+              </a>
+              
+            </div>
+            
+
+            <div class="flex gap-[6px] flex-wrap mt-4">
+              
+              <span class="tag">Node.js</span>
+              
+              <span class="tag">React</span>
+              
+              <span class="tag">Docker</span>
+              
+              <span class="tag">Docker Swarm</span>
+              
+              <span class="tag">MySQL</span>
+              
+              <span class="tag">AWS</span>
+              
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="hud exp-card mb-[3px] overflow-hidden">
+
+        <!-- Header (clickable) -->
+        <div class="exp-header grid grid-cols-[auto_1fr_auto_auto] items-center gap-5 px-7 py-5 cursor-pointer transition-[background] duration-200">
+          <div>
+            <div class="text-[20px] font-bold tracking-[0.04em]">ITALIAN MINISTRY OF TECHNOLOGICAL INNOVATION</div>
+            <div class="text-[15px] text-[#888] tracking-[0.04em] mt-[3px]">Senior Software Engineer · Italian Government</div>
+          </div>
+          <div class="font-mono text-[14px] text-[#888] tracking-[0.07em] justify-self-end">2020 — 2021</div>
+          <div class="exp-chevron text-accent">&#9662;</div>
+        </div>
+
+        <!-- Body (collapsible) -->
+        <div class="exp-body border-t border-[rgba(255,255,255,0.04)]">
+          <div class="px-7 pt-2 pb-7">
+
+            
+            <p class="text-[16px] text-[#888] leading-[1.6] mb-4 pb-4 border-b border-[rgba(255,255,255,0.04)]">Software Engineer for the Italian government at the Minister of Technology Innovation and Digital Transformation. Mainly as Frontend Engineer, contributing to many open source projects in the Italia GitHub organization.
+</p>
+            
+
+            <ul class="list-none mb-5">
+              
+              <li class="flex gap-3 items-start py-2 text-[16px] text-[#999] leading-[1.55] border-b border-[rgba(255,255,255,0.03)]">
+                <span class="text-accent text-[7px] mt-[7px] shrink-0">&#9670;</span>
+                Refactored the &quot;Software catalogue&quot; section of developers.italia.it — removed jQuery entirely in favor of React.
+              </li>
+              
+              <li class="flex gap-3 items-start py-2 text-[16px] text-[#999] leading-[1.55] border-b border-[rgba(255,255,255,0.03)]">
+                <span class="text-accent text-[7px] mt-[7px] shrink-0">&#9670;</span>
+                Developed cloud.italia.it using Gatsby.js (JAMstack).
+              </li>
+              
+              <li class="flex gap-3 items-start py-2 text-[16px] text-[#999] leading-[1.55]">
+                <span class="text-accent text-[7px] mt-[7px] shrink-0">&#9670;</span>
+                Built an Open API 3.0 checker with a live editor, helping users validate OpenAPI schemas against defined rulesets.
+              </li>
+              
+            </ul>
+
+            
+            <div class="flex flex-wrap gap-2 mt-[14px]">
+              
+              <a href="https://github.com/italia/developers.italia.it" target="_blank"
+                 class="font-mono text-[14px] text-accent tracking-[0.06em] opacity-70 no-underline border-b border-transparent transition-[opacity,border-color] duration-200"
+                 onmouseenter="this.style.opacity='1';this.style.borderBottomColor='var(--accent)'"
+                 onmouseleave="this.style.opacity='0.7';this.style.borderBottomColor='transparent'">
+                github.com/italia/developers.italia.it ↗
+              </a>
+              
+              <a href="https://github.com/italia/cloud.italia.it-site" target="_blank"
+                 class="font-mono text-[14px] text-accent tracking-[0.06em] opacity-70 no-underline border-b border-transparent transition-[opacity,border-color] duration-200"
+                 onmouseenter="this.style.opacity='1';this.style.borderBottomColor='var(--accent)'"
+                 onmouseleave="this.style.opacity='0.7';this.style.borderBottomColor='transparent'">
+                github.com/italia/cloud.italia.it-site ↗
+              </a>
+              
+              <a href="https://github.com/italia/api-oas-checker" target="_blank"
+                 class="font-mono text-[14px] text-accent tracking-[0.06em] opacity-70 no-underline border-b border-transparent transition-[opacity,border-color] duration-200"
+                 onmouseenter="this.style.opacity='1';this.style.borderBottomColor='var(--accent)'"
+                 onmouseleave="this.style.opacity='0.7';this.style.borderBottomColor='transparent'">
+                github.com/italia/api-oas-checker ↗
+              </a>
+              
+            </div>
+            
+
+            <div class="flex gap-[6px] flex-wrap mt-4">
+              
+              <span class="tag">React</span>
+              
+              <span class="tag">Gatsby.js</span>
+              
+              <span class="tag">JAMstack</span>
+              
+              <span class="tag">TypeScript</span>
+              
+              <span class="tag">Open Source</span>
+              
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="hud exp-card mb-[3px] overflow-hidden">
+
+        <!-- Header (clickable) -->
+        <div class="exp-header grid grid-cols-[auto_1fr_auto_auto] items-center gap-5 px-7 py-5 cursor-pointer transition-[background] duration-200">
+          <div>
+            <div class="text-[20px] font-bold tracking-[0.04em]">IBM</div>
+            <div class="text-[15px] text-[#888] tracking-[0.04em] mt-[3px]">Software Engineer</div>
+          </div>
+          <div class="font-mono text-[14px] text-[#888] tracking-[0.07em] justify-self-end">2012 — 2016</div>
+          <div class="exp-chevron text-accent">&#9662;</div>
+        </div>
+
+        <!-- Body (collapsible) -->
+        <div class="exp-body border-t border-[rgba(255,255,255,0.04)]">
+          <div class="px-7 pt-2 pb-7">
+
+            
+            <p class="text-[16px] text-[#888] leading-[1.6] mb-4 pb-4 border-b border-[rgba(255,255,255,0.04)]">Covered many roles: frontend developer, REST API developer, test engineer and inventor.</p>
+            
+
+            <ul class="list-none mb-5">
+              
+              <li class="flex gap-3 items-start py-2 text-[16px] text-[#999] leading-[1.55] border-b border-[rgba(255,255,255,0.03)]">
+                <span class="text-accent text-[7px] mt-[7px] shrink-0">&#9670;</span>
+                Frontend developer on the product IBM Workload Automation.
+              </li>
+              
+              <li class="flex gap-3 items-start py-2 text-[16px] text-[#999] leading-[1.55] border-b border-[rgba(255,255,255,0.03)]">
+                <span class="text-accent text-[7px] mt-[7px] shrink-0">&#9670;</span>
+                Design and development of REST APIs (both server and client).
+              </li>
+              
+              <li class="flex gap-3 items-start py-2 text-[16px] text-[#999] leading-[1.55] border-b border-[rgba(255,255,255,0.03)]">
+                <span class="text-accent text-[7px] mt-[7px] shrink-0">&#9670;</span>
+                Patents applications in the technology area aligned with IBM strategy.
+              </li>
+              
+              <li class="flex gap-3 items-start py-2 text-[16px] text-[#999] leading-[1.55]">
+                <span class="text-accent text-[7px] mt-[7px] shrink-0">&#9670;</span>
+                Design and implementation of automated test suites.
+              </li>
+              
+            </ul>
+
+            
+
+            <div class="flex gap-[6px] flex-wrap mt-4">
+              
+              <span class="tag">Java</span>
+              
+              <span class="tag">JavaScript</span>
+              
+              <span class="tag">REST APIs</span>
+              
+              <span class="tag">Agile</span>
+              
+              <span class="tag">OSLC</span>
+              
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+  </div>
+</section>
+
+  <section id="skills" class="section">
+  <div class="cv-container">
+
+    <div class="flex items-center gap-3 mb-[52px]">
+      <span class="accent-rule"></span>
+      <span class="font-mono text-[14px] tracking-[0.14em] uppercase text-accent">LOADED MODULES / TECHNICAL SKILLS</span>
+    </div>
+
+    <div class="grid grid-cols-[repeat(auto-fit,minmax(290px,1fr))] gap-5">
+      
+      <div class="hud p-7">
+        <div class="hud-card-header">LANGUAGES &amp; RUNTIME</div>
+        <div class="flex flex-wrap gap-2">
+          
+          <span class="skill-tag">TypeScript</span>
+          
+          <span class="skill-tag">Node.js</span>
+          
+        </div>
+      </div>
+      
+      <div class="hud p-7">
+        <div class="hud-card-header">DATA</div>
+        <div class="flex flex-wrap gap-2">
+          
+          <span class="skill-tag">PostgreSQL</span>
+          
+          <span class="skill-tag">MySQL</span>
+          
+          <span class="skill-tag">Modern SQL</span>
+          
+          <span class="skill-tag">CTE / Window Functions</span>
+          
+        </div>
+      </div>
+      
+      <div class="hud p-7">
+        <div class="hud-card-header">ARCHITECTURE</div>
+        <div class="flex flex-wrap gap-2">
+          
+          <span class="skill-tag">API Development</span>
+          
+          <span class="skill-tag">Microservices</span>
+          
+          <span class="skill-tag">RabbitMQ</span>
+          
+          <span class="skill-tag">Software Design</span>
+          
+        </div>
+      </div>
+      
+      <div class="hud p-7">
+        <div class="hud-card-header">INFRASTRUCTURE</div>
+        <div class="flex flex-wrap gap-2">
+          
+          <span class="skill-tag">Docker</span>
+          
+          <span class="skill-tag">Docker Swarm</span>
+          
+          <span class="skill-tag">Git</span>
+          
+          <span class="skill-tag">CI/CD · GitHub Actions</span>
+          
+        </div>
+      </div>
+      
+      <div class="hud p-7">
+        <div class="hud-card-header">APPROACH</div>
+        <div class="flex flex-wrap gap-2">
+          
+          <span class="skill-tag">Automatic Programming</span>
+          
+          <span class="skill-tag">Problem Solving</span>
+          
+          <span class="skill-tag">Effective Communication</span>
+          
+          <span class="skill-tag">Pragmatic Engineering</span>
+          
+          <span class="skill-tag">Mentoring</span>
+          
+        </div>
+      </div>
+      
+    </div>
+
+  </div>
+</section>
+
+  <section id="education" class="section">
+  <div class="cv-container">
+
+    <div class="flex items-center gap-3 mb-[52px]">
+      <span class="accent-rule"></span>
+      <span class="font-mono text-[14px] tracking-[0.14em] uppercase text-accent">EDUCATION &amp; PATENTS</span>
+    </div>
+
+    <div class="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-5">
+
+      <!-- Degrees -->
+      <div class="hud py-[26px] px-7">
+        <div class="hud-card-header">DEGREES</div>
+        
+        <div class="mb-[22px] pb-[22px] border-b border-[rgba(255,255,255,0.04)]">
+          <div class="grid grid-cols-[1fr_auto] items-start gap-3 mb-1">
+            <div class="text-[16px] font-bold tracking-[0.03em]">Master&#39;s Degree</div>
+            <span class="font-mono text-[12px] text-[#888] tracking-[0.08em] whitespace-nowrap">2008–2012</span>
+          </div>
+          <div class="text-[15px] text-accent tracking-[0.04em] mb-1">Computer Science</div>
+          <div class="text-[14px] text-[#888] mb-1">University of Salerno</div>
+          <div class="text-[14px] text-[#888] leading-[1.5] italic">110/110 with honors</div>
+        </div>
+        
+        <div class="">
+          <div class="grid grid-cols-[1fr_auto] items-start gap-3 mb-1">
+            <div class="text-[16px] font-bold tracking-[0.03em]">Bachelor&#39;s Degree</div>
+            <span class="font-mono text-[12px] text-[#888] tracking-[0.08em] whitespace-nowrap">2004–2008</span>
+          </div>
+          <div class="text-[15px] text-accent tracking-[0.04em] mb-1">Computer Science</div>
+          <div class="text-[14px] text-[#888] mb-1">University of Salerno</div>
+          <div class="text-[14px] text-[#888] leading-[1.5] italic">110/110 with honors</div>
+        </div>
+        
+      </div>
+
+      <!-- Patents + Certs -->
+      <div class="hud py-[26px] px-7">
+        <div class="hud-card-header">PATENTS</div>
+        
+        <div class="flex gap-[10px] py-[9px] border-b border-[rgba(255,255,255,0.04)]">
+          <span class="text-accent text-[7px] mt-[6px] shrink-0">&#9670;</span>
+          
+          <a href="https://patents.justia.com/patent/9824551" target="_blank"
+             class="text-[15px] text-accent leading-[1.5] no-underline transition-opacity duration-200 hover:opacity-70">
+            Identifying a seat position with infrared light ↗
+          </a>
+          
+        </div>
+        
+        <div class="flex gap-[10px] py-[9px]">
+          <span class="text-accent text-[7px] mt-[6px] shrink-0">&#9670;</span>
+          
+          <a href="https://patents.justia.com/patent/9582952" target="_blank"
+             class="text-[15px] text-accent leading-[1.5] no-underline transition-opacity duration-200 hover:opacity-70">
+            Method and system for paperless electronic queue ticketing ↗
+          </a>
+          
+        </div>
+        
+
+        <div class="font-mono text-[14px] tracking-[0.14em] uppercase text-accent mt-6 pt-5 mb-4 border-t border-[#2a2a2a]">LANGUAGES</div>
+        <div class="flex gap-[10px] py-[7px] border-b border-[rgba(255,255,255,0.03)]">
+                  <span class="text-[#888] text-[7px] mt-[6px] shrink-0">&#9670;</span>
+                  <a href="https://cert.efset.org/PVgG7U" target="_blank"
+                     class="text-[15px] text-accent leading-[1.5] no-underline transition-opacity duration-200 hover:opacity-70">
+                    EF SET English Certificate — C2 Proficient ↗
+                  </a>exit
+                </div>
+
+        <div class="flex gap-[10px] py-[7px] border-b border-[rgba(255,255,255,0.03)]">
+                          <span class="text-[#888] text-[7px] mt-[6px] shrink-0">&#9670;</span>
+                          Italian — Native Proficiency
+                        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <section id="contact" class="section">
+  <div class="cv-container">
+
+    <div class="flex items-center gap-3 mb-[52px]">
+      <span class="accent-rule"></span>
+      <span class="font-mono text-[14px] tracking-[0.14em] uppercase text-accent">CONTACT</span>
+    </div>
+
+    <div class="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-4 max-w-[760px]">
+
+      <a href="mailto:emiliosp.me@gmail.com" class="hud hud-sm p-5 px-6 no-underline block">
+        <div class="font-mono text-[10px] tracking-[0.12em] uppercase text-[#888] mb-2">EMAIL</div>
+        <div class="text-[16px] text-[#e4e4e4] tracking-[0.02em]">emiliosp.me@gmail.com</div>
+      </a>
+
+      <a href="https://linkedin.com/in/emilio-spatola" target="_blank" class="hud hud-sm p-5 px-6 no-underline block">
+        <div class="font-mono text-[10px] tracking-[0.12em] uppercase text-[#888] mb-2">LINKEDIN</div>
+        <div class="text-[16px] text-[#e4e4e4] tracking-[0.02em]">/in/emilio-spatola</div>
+      </a>
+
+      <a href="https://github.com/emilioSp" target="_blank" class="hud hud-sm p-5 px-6 no-underline block">
+        <div class="font-mono text-[10px] tracking-[0.12em] uppercase text-[#888] mb-2">GITHUB</div>
+        <div class="text-[16px] text-[#e4e4e4] tracking-[0.02em]">github.com/emilioSp</div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+  </div>
+
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>

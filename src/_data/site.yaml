@@ -5,14 +5,13 @@ lastName: SPATOLA
 role: SENIOR SOFTWARE ENGINEER · TECH LEAD · SIMRACER
 tagline: >
   10+ years building web products — from IBM to the Italian Government,
-  from Translated to TheFork (TripAdvisor). Full-stack specialist in
-  Node.js, TypeScript & React.
+  from Translated to TheFork (TripAdvisor). Specialized in Node.js, TypeScript, API, Software Architecture and Postgres.
 quote: '"The hardest thing is to find the simplest one."'
 copyright: "2025"
 links:
   linkedin: https://linkedin.com/in/emilio-spatola
   github: https://github.com/emilioSp
-  email: emilio.spatola@gmail.com
+  email: emiliosp.me@gmail.com
 stats:
   - label: YEARS EXP.
     value: "10+"

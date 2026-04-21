@@ -7,12 +7,12 @@
       <!-- Eyebrow -->
       <div class="flex items-center gap-3 mb-7">
         <span class="accent-rule"></span>
-        <span class="font-mono text-[10px] tracking-[0.14em] uppercase text-accent">PROFILE</span>
+        <span class="font-mono text-[14px] tracking-[0.14em] uppercase text-accent">PROFILE</span>
       </div>
 
       <!-- Name -->
       <div class="mb-2">
-        <div class="font-[Rajdhani] font-light tracking-[0.45em] text-[#444] uppercase mb-1" style="font-size:clamp(13px,1.5vw,16px);">{{ site.firstName }}</div>
+        <div class="font-[Rajdhani] font-light tracking-[0.45em] text-[#888] uppercase mb-1" style="font-size:clamp(20px,2.5vw,28px);">{{ site.firstName }}</div>
         <h1 class="font-[Rajdhani] font-bold leading-[0.88] tracking-[-0.025em] text-[#e4e4e4]" style="font-size:clamp(56px,9vw,108px);">{{ site.lastName }}</h1>
       </div>
 
@@ -21,13 +21,13 @@
       </div>
 
       <p class="text-[17px] leading-[1.7] text-[#888] max-w-[480px] mb-4">{{ site.tagline }}</p>
-      <p class="font-mono text-[13px] leading-[1.6] text-[#444] max-w-[460px] mb-12 tracking-[0.02em]">{{ site.quote }}</p>
+      <p class="font-mono text-[15px] leading-[1.6] text-[#888] max-w-[460px] mb-12 tracking-[0.02em]">{{ site.quote }}</p>
 
       <!-- Stats strip -->
       <div class="stat-strip mb-11">
         {% for stat in site.stats %}
         <div class="stat-cell">
-          <div class="font-mono text-[9px] tracking-[0.12em] text-[#3a3a3a] mb-[6px] uppercase">{{ stat.label }}</div>
+          <div class="font-mono text-[10px] tracking-[0.12em] text-[#888] mb-[6px] uppercase">{{ stat.label }}</div>
           <div class="font-[Rajdhani] font-bold text-[20px] tracking-[0.05em]{% if stat.accent %} text-accent{% endif %}">{{ stat.value }}</div>
         </div>
         {% endfor %}
@@ -35,7 +35,7 @@
 
       <!-- CTAs -->
       <div class="flex gap-[14px] flex-wrap">
-        <a href="#experience" class="btn-primary">VIEW RACE RECORD &darr;</a>
+        <a href="#experience" class="btn-primary">VIEW WORK EXPERIENCE &darr;</a>
         <a href="{{ site.links.linkedin }}" target="_blank" class="btn-ghost">LINKEDIN</a>
       </div>
 

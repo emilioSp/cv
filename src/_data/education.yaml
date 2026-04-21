@@ -3,16 +3,18 @@ degrees:
     field: Computer Science
     school: University of Salerno
     years: 2008–2012
-    note: "Thesis: real-time Ambient Occlusion algorithm for videogame depth perception."
+    note: "110/110 with honors"
   - level: Bachelor's Degree
     field: Computer Science
     school: University of Salerno
     years: 2004–2008
-    note: "Scholarship: innovative e-commerce solutions in web 3D virtual environments."
+    note: "110/110 with honors"
 
 patents:
-  - Identifying a seat position with infrared light
-  - Method and system for paperless electronic queue ticketing
+  - label: Identifying a seat position with infrared light
+    href: https://patents.justia.com/patent/9824551
+  - label: Method and system for paperless electronic queue ticketing
+    href: https://patents.justia.com/patent/9582952
 
 certs:
   - label: Elasticsearch Essential Training

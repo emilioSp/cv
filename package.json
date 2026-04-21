@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "tailwindcss -i src/css/styles.css -o _site/css/styles.css && concurrently \"eleventy --serve\" \"tailwindcss -i src/css/styles.css -o _site/css/styles.css --watch\"",
-    "build": "tailwindcss -i src/css/styles.css -o _site/css/styles.css --minify && eleventy"
+    "dev": "tailwindcss -i src/css/styles.css -o docs/css/styles.css && concurrently \"eleventy --serve\" \"tailwindcss -i src/css/styles.css -o docs/css/styles.css --watch\"",
+    "build": "tailwindcss -i src/css/styles.css -o docs/css/styles.css --minify && eleventy"
   },
   "devDependencies": {
     "@11ty/eleventy": "3.0.0",

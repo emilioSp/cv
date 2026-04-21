@@ -2,7 +2,6 @@
   items:
     - TypeScript
     - Node.js
-    - Java
 
 - cat: DATA
   items:
@@ -27,6 +26,7 @@
 
 - cat: APPROACH
   items:
+    - Automatic Programming
     - Problem Solving
     - Effective Communication
     - Pragmatic Engineering

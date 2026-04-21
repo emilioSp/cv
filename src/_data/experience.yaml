@@ -1,7 +1,6 @@
 - team: THEFORK · TRIPADVISOR
   role: Senior Software Engineer · Tech Lead
   period: "2022 — 2025"
-  season: "2022"
   intro: >
     Senior Software Engineer in the Core Marketplace team, working on core, transversal
     systems powering TheFork's B2C and B2B platforms, with a strong focus on gift cards
@@ -25,7 +24,6 @@
 - team: TRANSLATED
   role: Senior Software Engineer
   period: "2016 — 2022"
-  season: "2016"
   intro: >
     Design and implementation of the TranslationOS APIs — the backbone of the Translated
     environment, used by customers to implement the continuous translation flow.
@@ -50,7 +48,6 @@
 - team: ITALIAN MINISTRY OF TECHNOLOGICAL INNOVATION
   role: Senior Software Engineer · Italian Government
   period: "2020 — 2021"
-  season: "2020"
   intro: >
     Software Engineer for the Italian government at the Minister of Technology Innovation
     and Digital Transformation. Mainly as Frontend Engineer, contributing to many open
@@ -76,7 +73,6 @@
 - team: IBM
   role: Software Engineer
   period: "2012 — 2016"
-  season: "2012"
   intro: "Covered many roles: frontend developer, REST API developer, test engineer and inventor."
   bullets:
     - Frontend developer on the product IBM Workload Automation.

@@ -82,7 +82,7 @@ body::after {
 .btn-ghost {
   display: inline-flex; align-items: center;
   padding: 13px 32px;
-  border: 1px solid #2a2a2a; color: #666;
+  border: 1px solid #2a2a2a; color: #888;
   font-family: 'JetBrains Mono', monospace;
   font-size: 11px; letter-spacing: 0.12em;
   text-decoration: none;
@@ -93,8 +93,8 @@ body::after {
 
 /* ── TAG ─────────────────────────────────────────────────────── */
 .tag {
-  font-family: 'JetBrains Mono', monospace; font-size: 9px;
-  padding: 4px 12px; border: 1px solid #2a2a2a; color: #555;
+  font-family: 'JetBrains Mono', monospace; font-size: 11px;
+  padding: 4px 12px; border: 1px solid #2a2a2a; color: #888;
   letter-spacing: 0.08em;
   clip-path: polygon(5px 0, 100% 0, calc(100% - 5px) 100%, 0 100%);
   transition: border-color 0.2s, color 0.2s;
@@ -115,8 +115,8 @@ body::after {
 
 /* ── NAV ─────────────────────────────────────────────────────── */
 .nav-link {
-  font-family: 'JetBrains Mono', monospace; font-size: 10px;
-  letter-spacing: 0.13em; color: #555; text-decoration: none;
+  font-family: 'JetBrains Mono', monospace; font-size: 12px;
+  letter-spacing: 0.13em; color: #888; text-decoration: none;
   transition: color 0.2s;
 }
 .nav-link:hover { color: var(--accent); }
@@ -159,30 +159,16 @@ body::after {
 /* ── HUD CARD HEADER ─────────────────────────────────────────── */
 .hud-card-header {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 10px; letter-spacing: 0.14em;
+  font-size: 12px; letter-spacing: 0.14em;
   text-transform: uppercase; color: var(--accent);
   margin-bottom: 20px; padding-bottom: 12px;
   border-bottom: 1px solid #2a2a2a;
 }
 
 /* ── ANIMATIONS ──────────────────────────────────────────────── */
-@keyframes bline  { from { opacity: 0; transform: translateX(-5px); } to { opacity: 1; transform: none; } }
-@keyframes blink  { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
-@keyframes sweep  { from { top: -2px; } to { top: 100vh; } }
 @keyframes fadeUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
 
-.boot-line { animation: bline 0.18s ease forwards; }
-
-.blink-cursor {
-  display: inline-block; width: 8px; height: 15px;
-  background: var(--accent);
-  animation: blink 0.65s ease infinite;
-  vertical-align: middle; margin-top: 8px;
-}
-
 .fadeUp { animation: fadeUp 0.7s ease 0.1s both; }
-
-.sweep-line { animation: sweep 2.4s linear infinite; }
 
 /* ── SCROLLBAR ───────────────────────────────────────────────── */
 ::-webkit-scrollbar       { width: 3px; }
@@ -192,7 +178,7 @@ body::after {
 
 /* ── ACCESSIBILITY ───────────────────────────────────────────── */
 @media (prefers-reduced-motion: reduce) {
-  .boot-line, .fadeUp, .blink-cursor, .sweep-line { animation: none; }
+  .fadeUp { animation: none; }
   .exp-body { transition: none; }
   .exp-chevron { transition: none; }
 }
