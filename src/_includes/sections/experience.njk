@@ -1,0 +1,68 @@
+<section id="experience" class="section">
+  <div class="cv-container">
+
+    <div class="flex items-center gap-3 mb-[52px]">
+      <span class="accent-rule"></span>
+      <span class="font-mono text-[10px] tracking-[0.14em] uppercase text-accent">RACE RECORD / WORK EXPERIENCE</span>
+    </div>
+
+    <div id="exp-list">
+      {% for exp in experience %}
+      {% set isFirst = loop.first %}
+      <div class="hud exp-card mb-[3px] overflow-hidden">
+
+        <!-- Header (clickable) -->
+        <div class="exp-header grid grid-cols-[auto_1fr_auto_auto] items-center gap-5 px-7 py-5 cursor-pointer transition-[background] duration-200{% if isFirst %} bg-[rgba(255,255,255,0.018)]{% endif %}">
+          <div class="font-mono text-[10px] text-accent opacity-65 min-w-[72px] tracking-[0.08em] border-l-2 border-accent pl-[10px] shrink-0">S{{ exp.season }}</div>
+          <div>
+            <div class="text-[20px] font-bold tracking-[0.04em]">{{ exp.team }}</div>
+            <div class="text-[13px] text-[#666] tracking-[0.04em] mt-[3px]">{{ exp.role }}</div>
+          </div>
+          <div class="font-mono text-[10px] text-[#3a3a3a] tracking-[0.07em]">{{ exp.period }}</div>
+          <div class="exp-chevron text-accent{% if isFirst %} open{% endif %}">&#9662;</div>
+        </div>
+
+        <!-- Body (collapsible) -->
+        <div class="exp-body{% if isFirst %} open{% endif %} border-t border-[rgba(255,255,255,0.04)]">
+          <div class="px-7 pt-2 pb-7">
+
+            {% if exp.intro %}
+            <p class="pl-[84px] text-[15px] text-[#777] leading-[1.6] mb-4 pb-4 border-b border-[rgba(255,255,255,0.04)]">{{ exp.intro }}</p>
+            {% endif %}
+
+            <ul class="list-none mb-5 pl-[84px]">
+              {% for bullet in exp.bullets %}
+              <li class="flex gap-3 items-start py-2 text-[15px] text-[#999] leading-[1.55]{% if not loop.last %} border-b border-[rgba(255,255,255,0.03)]{% endif %}">
+                <span class="text-accent text-[7px] mt-[7px] shrink-0">&#9670;</span>
+                {{ bullet }}
+              </li>
+              {% endfor %}
+            </ul>
+
+            {% if exp.links %}
+            <div class="flex flex-wrap gap-2 pl-[84px] mt-[14px]">
+              {% for link in exp.links %}
+              <a href="{{ link.href }}" target="_blank"
+                 class="font-mono text-[9px] text-accent tracking-[0.06em] opacity-70 no-underline border-b border-transparent transition-[opacity,border-color] duration-200"
+                 onmouseenter="this.style.opacity='1';this.style.borderBottomColor='var(--accent)'"
+                 onmouseleave="this.style.opacity='0.7';this.style.borderBottomColor='transparent'">
+                {{ link.label }} ↗
+              </a>
+              {% endfor %}
+            </div>
+            {% endif %}
+
+            <div class="flex gap-[6px] flex-wrap pl-[84px] mt-4">
+              {% for s in exp.stack %}
+              <span class="tag">{{ s }}</span>
+              {% endfor %}
+            </div>
+
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</section>
