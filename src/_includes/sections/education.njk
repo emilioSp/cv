@@ -1,0 +1,55 @@
+<section id="education" class="section">
+  <div class="cv-container">
+
+    <div class="flex items-center gap-3 mb-[52px]">
+      <span class="accent-rule"></span>
+      <span class="font-mono text-[10px] tracking-[0.14em] uppercase text-accent">DRIVER DATA / EDUCATION &amp; PATENTS</span>
+    </div>
+
+    <div class="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-5">
+
+      <!-- Degrees -->
+      <div class="hud py-[26px] px-7">
+        <div class="hud-card-header">DEGREES</div>
+        {% for deg in education.degrees %}
+        <div class="{% if not loop.last %}mb-[22px] pb-[22px] border-b border-[rgba(255,255,255,0.04)]{% endif %}">
+          <div class="grid grid-cols-[1fr_auto] items-start gap-3 mb-1">
+            <div class="text-[16px] font-bold tracking-[0.03em]">{{ deg.level }}</div>
+            <span class="font-mono text-[9px] text-[#3a3a3a] tracking-[0.08em] whitespace-nowrap">{{ deg.years }}</span>
+          </div>
+          <div class="text-[13px] text-accent tracking-[0.04em] mb-1">{{ deg.field }}</div>
+          <div class="text-[12px] text-[#555] mb-1">{{ deg.school }}</div>
+          <div class="text-[12px] text-[#444] leading-[1.5] italic">{{ deg.note }}</div>
+        </div>
+        {% endfor %}
+      </div>
+
+      <!-- Patents + Certs -->
+      <div class="hud py-[26px] px-7">
+        <div class="hud-card-header">PATENTS</div>
+        {% for patent in education.patents %}
+        <div class="flex gap-[10px] py-[9px]{% if not loop.last %} border-b border-[rgba(255,255,255,0.04)]{% endif %}">
+          <span class="text-accent text-[7px] mt-[6px] shrink-0">&#9670;</span>
+          <span class="text-[14px] text-[#999] leading-[1.5]">{{ patent }}</span>
+        </div>
+        {% endfor %}
+
+        <div class="font-mono text-[10px] tracking-[0.14em] uppercase text-accent mt-6 pt-5 mb-4 border-t border-[#2a2a2a]">CERTIFICATIONS</div>
+        {% for cert in education.certs %}
+        <div class="flex gap-[10px] py-[7px]{% if not loop.last %} border-b border-[rgba(255,255,255,0.03)]{% endif %}">
+          <span class="text-[#3a3a3a] text-[7px] mt-[6px] shrink-0">&#9670;</span>
+          {% if cert.href %}
+          <a href="{{ cert.href }}" target="_blank"
+             class="text-[13px] text-accent leading-[1.5] no-underline transition-opacity duration-200 hover:opacity-70">
+            {{ cert.label }} ↗
+          </a>
+          {% else %}
+          <span class="text-[13px] text-[#666] leading-[1.5]">{{ cert.label }}</span>
+          {% endif %}
+        </div>
+        {% endfor %}
+      </div>
+
+    </div>
+  </div>
+</section>
