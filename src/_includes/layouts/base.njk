@@ -3,11 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV</title>
+  <title>{{ site.title }}</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/styles.css">
 </head>
-<body>{{ content | safe }}</body>
+<body>
+
+  <!-- Boot screen -->
+  <div id="boot" class="fixed inset-0 z-[9999] bg-[#050505] flex items-center justify-center" style="transition:opacity 0.7s ease;">
+    <div class="absolute left-0 right-0 h-0.5 opacity-30 sweep-line" style="background:linear-gradient(90deg,transparent,var(--accent),transparent);top:-2px;"></div>
+    <div id="boot-lines" class="w-[520px] font-mono"></div>
+  </div>
+
+  <!-- Boot data for JS -->
+  <script id="boot-data" type="application/json">{{ boot | dump | safe }}</script>
+
+  <!-- Main app -->
+  <div id="app" style="opacity:0;transition:opacity 0.5s ease 0.1s;">
+    {{ content | safe }}
+  </div>
+
+  <script type="module" src="/js/main.js"></script>
+</body>
 </html>
